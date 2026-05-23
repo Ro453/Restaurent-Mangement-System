@@ -1,0 +1,30 @@
+public class Drive {
+
+    public static void main(String[] args) {
+
+        Restaurant r = new Restaurant("Food Palace", "Dhaka");
+
+        Order o = new Order(1);
+
+        o.addItem(250);
+        o.addItem(180);
+
+        r.addOrder(o.getTotal());
+
+        r.displayInfo();
+        o.displayInfo();
+
+        System.out.println("Restaurant Name: " + r.getName());
+        System.out.println("Location: " + r.getLocation());
+        System.out.println("Order ID: " + o.getOrderId());
+        System.out.println("Order Total: " + o.getTotal());
+        System.out.println("Total Sales: " + r.getTotalSales());
+
+
+        /*Monira*/
+
+
+
+
+    }
+}
