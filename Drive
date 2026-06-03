@@ -21,7 +21,16 @@ public class Drive {
         System.out.println("Total Sales: " + r.getTotalSales());
 
 
-        /*Monira*/
+        */*Monira*/
+        Fooditem item = new Fooditem("Burger", 250.0) {
+            @Override
+            public double totalPrice() {
+                // AbstractionTest.java
+                return this.getItemPrice();
+            }
+        };
+        System.out.println("Item Name: " + item.getItemName());
+        System.out.println("Total Price: " + item.totalPrice());
 
 
 
