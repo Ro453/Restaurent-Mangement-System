@@ -1,0 +1,13 @@
+public class AbstractionTest {
+    public static void main(String[] args) {
+        Fooditem item = new Fooditem("Pizza", 250.0) {
+            @Override
+            public double totalPrice() {
+                // AbstractionTest.java
+                return this.getItemPrice();
+            }
+        };
+        System.out.println("Item Name: " + item.getItemName());
+        System.out.println("Total Price: " + item.totalPrice());
+    }
+}
