@@ -22,7 +22,7 @@ public class Drive {
 
 
         /*Monira*/
-        Fooditem item = new Fooditem("Burger", 250.0) {
+        Fooditem item = new Fooditem("pizza", 250.0) {
             @Override
             public double totalPrice() {
                 // AbstractionTest.java
