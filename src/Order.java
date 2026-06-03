@@ -28,12 +28,11 @@ class Order {
     {
 
         /*Order o= new Order(101);
-        o.addItem(200);
-        o.addItem(150);*/
+        o.addItem(250);
+        o.addItem(180);*/
 
         System.out.println("Order Id:"+ orderId+" " +"Total Bill:"+ total);
 
     }
 
 }
-

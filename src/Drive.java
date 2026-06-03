@@ -21,8 +21,8 @@ public class Drive {
         System.out.println("Total Sales: " + r.getTotalSales());
 
 
-        */*Monira*/
-        Fooditem item = new Fooditem("Pizza", 250.0) {
+        /*Monira*/
+        Fooditem item = new Fooditem("Burger", 250.0) {
             @Override
             public double totalPrice() {
                 // AbstractionTest.java
@@ -31,6 +31,30 @@ public class Drive {
         };
         System.out.println("Item Name: " + item.getItemName());
         System.out.println("Total Price: " + item.totalPrice());
+
+
+
+        /*Marzia*/
+        Waiter waiter1 = new Waiter("Maherin");
+
+        waiter1.displayInfo();
+        waiter1.takeOrder("Pizza");
+
+        /*Nila*/
+        Chef chef1 = new Chef("Nila", "Pizza");
+
+        chef1.displayInfo();
+        chef1.cook();
+
+ // Dessert Example
+        Dessert dessert = new Dessert("Ice Cream", 150.0);
+        System.out.println("Dessert Name: " + dessert.getItemName());
+        System.out.println("Dessert Price: " + dessert.totalPrice());
+
+        // MainCourse Example
+        MainCourse mainCourse = new MainCourse("Biryani", 300.0);
+        System.out.println("Main Course Name: " + mainCourse.getItemName());
+        System.out.println("Main Course Price: " + mainCourse.totalPrice());
 
 
 

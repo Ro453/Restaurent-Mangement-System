@@ -1,4 +1,3 @@
-
 public abstract class Fooditem {
     private String itemName;
     private double itemPrice;
@@ -17,4 +16,3 @@ public abstract class Fooditem {
         return itemPrice;
     }
 }
-
